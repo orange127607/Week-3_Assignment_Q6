@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context=".ProfileFragment" android:id="@+id/frameLayout">
+
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:id="@+id/profileEdit" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            style="@style/GW" android:inputType=""/>
+    <ImageView
+            android:src="@drawable/pic"
+            android:layout_width="0dp"
+            android:layout_height="350dp"
+            android:id="@+id/imageView" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/profileEdit" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"/>
+    <EditText
+            android:text="Name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameEdit"
+            style="@style/GW" app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/nicknameEdit" android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:layout_marginEnd="4dp" android:textAlignment="center"/>
+    <EditText
+            android:text="Nick Name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/nicknameEdit"
+            style="@style/GW" app:layout_constraintStart_toEndOf="@+id/nameEdit"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="@+id/imageView"
+            android:layout_marginEnd="16dp" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" android:layout_marginStart="4dp"
+            android:textAlignment="center"/>
+    <EditText
+            android:text="Leo Lyu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameEdit2"
+            style="@style/WB" app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/nicknameEdit2" android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/nameEdit"
+            android:layout_marginEnd="4dp"/>
+    <EditText
+            android:text="Leo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/nicknameEdit2" app:layout_constraintStart_toEndOf="@+id/nameEdit2"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="@+id/imageView"
+            android:layout_marginEnd="16dp" app:layout_constraintTop_toBottomOf="@+id/nicknameEdit"
+            android:layout_marginTop="16dp" android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/nameEdit2" android:gravity="center_vertical"
+            style="@style/WB"/>
+    <EditText
+            android:text="How about me"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/howEdit"
+            style="@style/GW" app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="@+id/imageView" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/nicknameEdit2" android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" android:textAlignment="center"/>
+    <EditText
+            android:text="I'm Leo......blablabla"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/newsEdit"
+            style="@style/WB" app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/howEdit"
+            app:layout_constraintBottom_toTopOf="@+id/saveButton"
+            android:layout_marginStart="16dp" android:layout_marginEnd="16dp" android:textAlignment="textStart"/>
+    <Button
+            android:text="SAVE"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/saveButton"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:textSize="18sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
